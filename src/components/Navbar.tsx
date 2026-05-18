@@ -6,12 +6,12 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-	{ name: "Home", href: "#hero" },
-	{ name: "About", href: "#about" },
-	{ name: "Skills", href: "#skills" },
-	{ name: "Projects", href: "#projects" },
-	{ name: "Experience", href: "#experience" },
-	{ name: "Contact", href: "#contact" },
+	{ name: "Home", href: "/#hero" },
+	{ name: "About", href: "/#about" },
+	{ name: "Skills", href: "/#skills" },
+	{ name: "Projects", href: "/#projects" },
+	{ name: "Experience", href: "/#experience" },
+	{ name: "Contact", href: "/#contact" },
 ];
 
 export function Navbar() {
@@ -22,7 +22,7 @@ export function Navbar() {
 			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 				<div className="flex h-14 items-center justify-between gap-4">
 					<div>
-						<Link href="#home">
+						<Link href="/#home">
 							<Image
 								src="/logo.png"
 								alt="Logo"
@@ -59,7 +59,7 @@ export function Navbar() {
 			</div>
 
 			{isOpen && (
-				<div className="md:hidden bg-[#111112] border-b border-white/5">
+				<div className="md:hidden bg-[/#111112] border-b border-white/5">
 					<div className="p-2">
 						{navLinks.map((link) => (
 							<Link
