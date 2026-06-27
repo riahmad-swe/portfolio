@@ -30,7 +30,7 @@ export function Experience() {
 			className="relative px-4 py-16 md:py-28 lg:px-8 overflow-hidden"
 		>
 			{/* ব্যাকগ্রাউন্ড অ্যাম্বিয়েন্ট আভা */}
-			<div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[450px] h-[500px] bg-teal-500/5 blur-[130px] rounded-full pointer-events-none" />
+			<div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-112.5 h-125 bg-teal-500/5 blur-[130px] rounded-full pointer-events-none" />
 
 			<div className="mx-auto max-w-5xl relative z-10">
 				{/* পোর্টফোলিও স্ট্যান্ডার্ড হেডিং এরিয়া */}
@@ -48,7 +48,7 @@ export function Experience() {
 				</div>
 
 				{/* ডাইনামিক ভার্টিকাল টাইমলাইন ট্র্যাক */}
-				<div className="relative space-y-10 pl-2 before:absolute before:left-[28px] before:top-8 before:h-[90%] before:w-[2px] before:bg-linear-to-b before:from-teal-500/50 before:via-neutral-700/80 before:to-neutral-900">
+				<div className="relative space-y-10 pl-2 before:absolute before:left-7 before:top-8 before:h-[90%] before:w-0.5 before:bg-linear-to-b before:from-teal-500/50 before:via-neutral-700/80 before:to-neutral-900">
 					{experiences.map((exp, idx) => (
 						<div
 							key={idx}

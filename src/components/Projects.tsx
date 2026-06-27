@@ -12,8 +12,8 @@ export function Projects() {
 			className="relative px-4 py-16 md:py-28 lg:px-8 overflow-hidden"
 		>
 			{/* ব্যাকগ্রাউন্ড অ্যাম্বিয়েন্ট নিয়ন আভা */}
-			<div className="absolute top-1/3 left-10 w-[500px] h-[500px] bg-cyan-500/5 blur-[140px] rounded-full pointer-events-none" />
-			<div className="absolute bottom-1/3 right-10 w-[450px] h-[450px] bg-teal-500/5 blur-[130px] rounded-full pointer-events-none" />
+			<div className="absolute top-1/3 left-10 w-125 h-125 bg-cyan-500/5 blur-[140px] rounded-full pointer-events-none" />
+			<div className="absolute bottom-1/3 right-10 w-112.5 h-112.5 bg-teal-500/5 blur-[130px] rounded-full pointer-events-none" />
 
 			<div className="mx-auto max-w-7xl relative z-10">
 				{/* পূর্বের স্টাইলের সাথে ম্যাচ করা হেডিং এরিয়া */}
@@ -43,10 +43,10 @@ export function Projects() {
 						return (
 							<div
 								key={project.id}
-								className="group relative overflow-hidden rounded-[24px] border border-zinc-800 bg-zinc-900/25 backdrop-blur-md transition-all duration-500 hover:border-teal-500/40 hover:bg-neutral-950/40 hover:shadow-[0_20px_50px_rgba(20,184,166,0.15)]"
+								className="group relative overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/25 backdrop-blur-md transition-all duration-500 hover:border-teal-500/40 hover:bg-neutral-950/40 hover:shadow-[0_20px_50px_rgba(20,184,166,0.15)]"
 							>
 								{/* হোভার ব্যাকগ্রাউন্ড লাইট রিফ্লেকশন */}
-								<div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-linear-to-br from-teal-500/5 via-transparent to-cyan-500/5 rounded-[24px] transition-opacity duration-700 pointer-events-none" />
+								<div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-linear-to-br from-teal-500/5 via-transparent to-cyan-500/5 rounded-3xl transition-opacity duration-700 pointer-events-none" />
 
 								<div
 									className={`flex flex-col ${isEven ? "lg:flex-row" : "lg:flex-row-reverse"} h-full`}

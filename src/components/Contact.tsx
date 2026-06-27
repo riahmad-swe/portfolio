@@ -80,7 +80,7 @@ export function Contact() {
 			className="relative px-4 py-16 md:py-28 lg:px-8 overflow-hidden"
 		>
 			{/* ব্যাকগ্রাউন্ড অ্যাম্বিয়েন্ট আভা */}
-			<div className="absolute bottom-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-teal-500/5 blur-[140px] rounded-full pointer-events-none" />
+			<div className="absolute bottom-1/4 left-1/2 -translate-x-1/2 w-150 h-125 bg-teal-500/5 blur-[140px] rounded-full pointer-events-none" />
 
 			<div className="mx-auto max-w-7xl relative z-10">
 				{/* পোর্টফোলিও স্ট্যান্ডার্ড ইউনিক হেডিং */}
@@ -123,7 +123,7 @@ export function Contact() {
 									{/* আইকন সেল উইথ রোটেশন ট্রিপ */}
 									<div className="flex size-10 shrink-0 items-center justify-center rounded-lg border border-neutral-900 bg-neutral-950 font-mono text-sm font-extrabold text-neutral-400 transition-all duration-300 group-hover:scale-105 group-hover:border-teal-500/30 group-hover:bg-neutral-900/60 group-hover:text-teal-400 group-hover:shadow-[0_0_12px_rgba(20,184,166,0.15)]">
 										{typeof social.icon === "string" ? (
-											<span className="transition-transform duration-500 group-hover:rotate-[360deg]">
+											<span className="transition-transform duration-500 group-hover:rotate-360">
 												{social.icon}
 											</span>
 										) : (
@@ -153,7 +153,7 @@ export function Contact() {
 							className="relative rounded-2xl border border-neutral-900/90 bg-neutral-950/20 p-6 sm:p-8 backdrop-blur-md shadow-[0_15px_40px_rgba(0,0,0,0.4)] overflow-hidden"
 						>
 							{/* ফর্ম টপ থ্রেড গ্লো লাইট */}
-							<div className="absolute top-0 left-0 right-0 h-[1px] bg-linear-to-r from-transparent via-teal-500/40 to-transparent" />
+							<div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-teal-500/40 to-transparent" />
 
 							<div className="space-y-5">
 								{/* ইনপুট ১: নাম */}

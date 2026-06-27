@@ -37,8 +37,8 @@ export function About() {
 			className="relative px-4 py-16 md:py-28 lg:px-8 text-justify overflow-hidden"
 		>
 			{/* ব্যাকগ্রাউন্ডে অ্যাম্বিয়েন্ট নিয়ন গ্লো লাইট */}
-			<div className="absolute top-1/3 right-10 w-[400px] h-[400px] bg-teal-500/5 blur-[130px] rounded-full pointer-events-none" />
-			<div className="absolute bottom-1/4 left-10 w-[350px] h-[350px] bg-cyan-500/5 blur-[120px] rounded-full pointer-events-none" />
+			<div className="absolute top-1/3 right-10 w-100 h-100 bg-teal-500/5 blur-[130px] rounded-full pointer-events-none" />
+			<div className="absolute bottom-1/4 left-10 w-87.5 h-87.5 bg-cyan-500/5 blur-[120px] rounded-full pointer-events-none" />
 
 			<div className="mx-auto max-w-7xl relative z-10">
 				{/* পূর্বের স্টাইলের সাথে ম্যাচ করা হেডিং এরিয়া */}
@@ -79,7 +79,7 @@ export function About() {
 						</div>
 
 						{/* Interactive Timeline Track */}
-						<div className="relative space-y-8 pl-2 before:absolute before:left-[19px] before:top-2 before:h-[95%] before:w-[2px] before:bg-linear-to-b before:from-teal-500/40 before:via-neutral-800 before:to-neutral-900">
+						<div className="relative space-y-8 pl-2 before:absolute before:left-4.75 before:top-2 before:h-[95%] before:w-0.5 before:bg-linear-to-b before:from-teal-500/40 before:via-neutral-800 before:to-neutral-900">
 							{journey.map((step, index) => (
 								<div
 									key={index}

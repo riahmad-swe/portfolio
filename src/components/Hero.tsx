@@ -10,7 +10,7 @@ export function Hero() {
 			className="relative flex min-h-[90vh] items-center justify-center overflow-hidden px-4 lg:px-8"
 		>
 			{/* ব্যাকগ্রাউন্ড অ্যাম্বিয়েন্ট গ্লো */}
-			<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-500/5 blur-[150px] rounded-full pointer-events-none" />
+			<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-teal-500/5 blur-[150px] rounded-full pointer-events-none" />
 
 			<div className="mx-auto flex w-7xl flex-col items-center gap-12 lg:flex-row lg:justify-between relative z-10">
 				<div className="flex flex-col items-center text-center lg:items-start lg:text-left">

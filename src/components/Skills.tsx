@@ -130,7 +130,7 @@ export function Skills() {
 			className="relative px-4 py-16 md:py-28 lg:px-8 overflow-hidden"
 		>
 			{/* ব্যাকগ্রাউন্ডে সূক্ষ্ম নিওন গ্লো আভা */}
-			<div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-teal-500/5 blur-[120px] rounded-full pointer-events-none" />
+			<div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-125 h-125 bg-teal-500/5 blur-[120px] rounded-full pointer-events-none" />
 
 			<div className="mx-auto max-w-7xl relative z-10">
 				<div className="flex flex-col items-start mb-14">
@@ -172,7 +172,7 @@ export function Skills() {
 									}`}
 								>
 									{/* কারেন্ট কম্পোনেন্টে আইকন বড় করার জন্য CSS ক্লাস পাস করা হয়েছে */}
-									<div className="[&>svg]:size-[18px] flex items-center justify-center">
+									<div className="[&>svg]:size-4.5 flex items-center justify-center">
 										{category.icon}
 									</div>
 								</span>
@@ -181,7 +181,7 @@ export function Skills() {
 
 								{/* বর্তমান ব্রাইট নিয়ন স্টাইলের সাথে ম্যাচ করা গ্লোয়িং পিল ইন্ডিকেটর */}
 								{isActive && (
-									<span className="absolute -bottom-[9px] left-1/2 -translate-x-1/2 w-10 h-[3px] bg-linear-to-r from-cyan-400 via-teal-500 to-blue-500 shadow-[0_0_12px_#06b6d4,0_0_4px_#14b8a6] rounded-full animate-pulse" />
+									<span className="absolute -bottom-2.25 left-1/2 -translate-x-1/2 w-10 h-0.75 bg-linear-to-r from-cyan-400 via-teal-500 to-blue-500 shadow-[0_0_12px_#06b6d4,0_0_4px_#14b8a6] rounded-full animate-pulse" />
 								)}
 							</button>
 						);
@@ -189,7 +189,7 @@ export function Skills() {
 				</div>
 
 				{/* স্কিল গ্রিড এরিয়া উইথ রিচ ট্রানজিশন */}
-				<div className="min-h-[350px]">
+				<div className="min-h-87.5">
 					{skillCategories.map((category) => (
 						<div
 							key={category.id}
@@ -207,7 +207,7 @@ export function Skills() {
 
 									{/* আইকন বক্স উইথ ডাইনামিক বর্ডার ও গ্লো */}
 									<div className="flex size-11 shrink-0 items-center justify-center rounded-xl border border-neutral-900 bg-neutral-950/80 text-xl font-bold font-sans text-neutral-400 shadow-inner transition-all duration-300 group-hover:scale-105 group-hover:border-teal-400 group-hover:bg-neutral-900/70 group-hover:text-teal-300 group-hover:shadow-[0_0_20px_rgba(6,182,212,0.4)]">
-										<span className="transition-transform duration-500 group-hover:rotate-[360deg]">
+										<span className="transition-transform duration-500 group-hover:rotate-360">
 											{skill.icon}
 										</span>
 									</div>

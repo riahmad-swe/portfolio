@@ -11,7 +11,7 @@ export function Footer() {
 			<div className="h-px w-full absolute left-0 top-0 bg-linear-to-r from-zinc-800 via-teal-400/40 to-zinc-800"></div>
 
 			{/* ব্যাকগ্রাউন্ডে একটি সূক্ষ্ম নিয়ন আভা */}
-			<div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[150px] bg-teal-500/5 blur-[80px] rounded-full pointer-events-none" />
+			<div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-125 h-37.5 bg-teal-500/5 blur-[80px] rounded-full pointer-events-none" />
 
 			<div className="mx-auto max-w-7xl px-4 py-12 lg:px-8 relative z-10">
 				<div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-neutral-900/60">
