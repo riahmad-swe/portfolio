@@ -98,7 +98,7 @@ export const projects = [
 		github: "https://github.com/ahnafswe/ecoforge-frontend",
 	},
 	{
-		id: "cold-storage",
+		id: "frostvault",
 		name: "FrostVault",
 		image: "/projects/frostvault.png",
 		slogan: "Potato cold storage management.",

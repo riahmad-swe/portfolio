@@ -22,7 +22,8 @@ export function Footer() {
 								<Cpu size={16} />
 							</div>
 							<span>
-								Titonex<span className="text-teal-400">.</span>
+								Rakibul Islam
+								<span className="text-teal-400">.</span>
 							</span>
 						</div>
 						<p className="text-sm text-neutral-400 max-w-sm leading-relaxed text-justify">
@@ -161,8 +162,8 @@ export function Footer() {
 							<span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
 							<span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500 shadow-[0_0_8px_#10b981]" />
 						</span>
-						<span className="font-mono text-[10px] tracking-wider uppercase text-neutral-400">
-							Core Engine Operational
+						<span className="font-mono text-xs tracking-wider uppercase text-neutral-400">
+							Thank You
 						</span>
 					</div>
 				</div>

@@ -3,8 +3,35 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { ExternalLink, FolderGit2, ChevronLeft } from "lucide-react";
 import Link from "next/link";
+import { Metadata, ResolvingMetadata } from "next";
 
-export default async function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
+type Props = {
+	params: { id: string };
+};
+
+export async function generateMetadata(
+	{ params }: Props,
+	parent: ResolvingMetadata,
+): Promise<Metadata> {
+	const id = params.id;
+	const project = projects.find((project) => project.id === id);
+
+	const projectTitle = project?.name;
+
+	return {
+		title: projectTitle,
+		description: `Detailed case study and architecture overview of ${projectTitle}.`,
+		openGraph: {
+			images: [`/projects/${id}.png`], // ডায়নামিক ওজি ইমেজ
+		},
+	};
+}
+
+export default async function ProjectPage({
+	params,
+}: {
+	params: Promise<{ id: string }>;
+}) {
 	const { id } = await params;
 
 	const project = projects.find(
@@ -45,7 +72,9 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
 						/>
 					</div>
 					<div className="flex flex-col justify-center">
-						<h1 className="text-4xl font-bold text-teal-500">{project.name}</h1>
+						<h1 className="text-4xl font-bold text-teal-500">
+							{project.name}
+						</h1>
 						<p className="mt-4 text-xl text-zinc-400 italic">
 							&quot;{project.slogan}&quot;
 						</p>
