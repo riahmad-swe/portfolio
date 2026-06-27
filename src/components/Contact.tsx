@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Mail, Phone, Send, CheckCircle, MessageSquare } from "lucide-react";
+import { sendEmail } from "@/lib/sendEmail";
 
 const socials = [
 	{
@@ -62,16 +63,23 @@ export function Contact() {
 		e.preventDefault();
 		setIsSubmitting(true);
 
-		// এখানে আপনার ব্যাকএন্ড বা ফাইবারবেস/ইমেইল সার্ভিস ইন্টিগ্রেট করতে পারবেন
-		// ডেমো সাবমিশন ট্র্যাকার (2 Seconds delay)
-		await new Promise((resolve) => setTimeout(resolve, 1800));
+		const response = await sendEmail(formData);
 
-		setIsSubmitting(false);
-		setIsSubmitted(true);
-		setFormData({ name: "", email: "", message: "" });
+		if (response.success) {
+			setIsSubmitting(false);
+			setIsSubmitted(true);
+			setFormData({ name: "", email: "", message: "" });
 
-		// ৫ সেকেন্ড পর সাকসেস স্টেট অটো ক্লিয়ার হবে
-		setTimeout(() => setIsSubmitted(false), 5000);
+			// 5 সেকেন্ড পর সাকসেস স্টেট অটো ক্লিয়ার হবে
+			setTimeout(() => setIsSubmitted(false), 5000);
+		} else {
+			setIsSubmitting(false);
+			// Handle error state (e.g., showing a toast notification)
+			console.error(
+				response.error ||
+					"Failed to send the message. Please try again.",
+			);
+		}
 	};
 
 	return (
